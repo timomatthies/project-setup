@@ -1,1 +1,8 @@
-@import "./partials/example";
+@import "./tokens/color";
+@import "./tokens/font";
+@import "./tokens/units";
+
+@import "./partials/header";
+
+@import "./utlis/reset.scss";
+
