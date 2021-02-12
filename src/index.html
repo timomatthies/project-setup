@@ -14,8 +14,23 @@
 
   </head>
     
+
+  
   <body>
-    <h1>My Homepage</h1>
+
+    <h1 class="top-right">
+      <a href="src/about.html">About</a>
+    </h1>
+
+    <! header insert >
+    <div>
+      <%= require('html-loader!./partials/modules/header.html') %>
+    </div>
+
+    <! body insert >
+    <div>
+      <%= require('html-loader!./partials/modules/footer.html') %>
+    </div>
   </body>
 
 </html>

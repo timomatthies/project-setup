@@ -5,15 +5,16 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     
-
     <div>
       <%= require('html-loader!./partials/modules/header.html') %>
     </div>
 
+     <div>
+      <%= require('html-loader!./partials/modules/footer.html') %>
+    </div>
+
   </body>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
 </html>

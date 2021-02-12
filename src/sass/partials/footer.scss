@@ -1,0 +1,16 @@
+@import "../general/stylesheet.scss";
+
+.footer-wrapper {
+    padding: $t-units-m;
+    padding-top: $t-units-s;
+    background-color: $t-colors-grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-content{
+    padding-top: $t-units-s;
+    padding-right: $t-units-s;
+    border-top: 1px solid $t-colors-white;
+}
+

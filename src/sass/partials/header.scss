@@ -1,15 +1,7 @@
+@import "../general/stylesheet.scss";
+
 header {
     background-color: $t-colors-white;
-
-    .viewport {
-        padding: $t-units-m;
-        box-sizing: border-box;
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        align-items: center;
-        justify-content: center;
-    }
 
     h1 {
         font-size: $t-font-size-h1;
@@ -27,41 +19,8 @@ header {
         text-transform: capitalize;
     }
 
-    a {
-        text-decoration: none;
-        color: $t-colors-black;
-
-        &:hover {
-            color: $t-colors-main;
-        } 
-    }
-
     ul {
         text-align: center;
     }
 
-    #timomatthies {
-        position: absolute;
-        margin: $t-units-m;
-        top: 0;
-        left: 0;
-    }
-
-    #about {
-        position: absolute;
-        margin: $t-units-m;
-        top: 0;
-        right: 0;
-    }
-
-    #contact {
-        position: absolute;
-        margin: $t-units-m;
-        bottom: 0;
-        left: 0;
-    }
-
-    
-
-    
 }

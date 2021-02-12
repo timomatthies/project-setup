@@ -1,0 +1,125 @@
+h1 {
+    font-size: $t-font-size-h1;
+    font-weight: 400;
+    color: $t-colors-black;
+    font-family: $t-font-reg;
+}
+
+h2 {
+    font-size: $t-font-size-h2;
+    font-weight: 400;
+    color: $t-colors-black;
+    font-family: $t-font-reg;
+}
+
+.viewport h2 {
+    font-size: $t-font-size-h2;
+    font-weight: 400;
+    color: $t-colors-black;
+    font-family: $t-font-reg;
+    text-align: center;
+}
+
+h3 {
+    font-size: $t-font-size-h3;
+    font-weight: 400;
+    color: $t-colors-black;
+    font-family: $t-font-reg;
+}
+
+footer h3 {
+    font-size: $t-font-size-h3;
+    font-weight: 400;
+    color: $t-colors-white;
+    font-family: $t-font-reg;
+}
+
+section p {
+    font-size: $t-font-size-copy;
+    font-weight: 400;
+    line-height: calc(#{$t-units-s} * 1.75);
+    color: $t-colors-black;
+    font-family: $t-font-reg;
+}
+
+a {
+    text-decoration: none;
+    color: $t-colors-black;
+
+    &:hover {
+        color: $t-colors-main;
+    } 
+}
+
+/** For links on colored backgrounds **/
+.link-white{
+    color: $t-colors-white;
+
+    &:hover {
+        color: $t-colors-main;
+    } 
+}
+
+.top-left {
+    position: absolute;
+    margin: $t-units-m;
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    position: absolute;
+    margin: $t-units-m;
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    margin: $t-units-m;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    position: absolute;
+    margin: $t-units-m;
+    bottom: 0;
+    right: 0;
+}
+
+/** span as page indicator**/
+.on{
+    color: $t-colors-main;
+}
+
+/** Container for body content**/
+.viewport {
+    padding: $t-units-m;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+   
+    /** Image Background Test
+    background-image: url(../images/eliane.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    **/
+}
+
+/** Combo-Class to center the content within the viewport**/
+.centered {
+    align-items: center;
+    justify-content: center;
+}
+
+/**Container for standart copy within body**/
+.copy-container{
+    padding-top: calc(#{$t-units-l} * 2);
+    padding-left: $t-units-m;
+    padding-right: $t-units-m;
+}
+
+

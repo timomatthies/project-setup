@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <! header insert >
+    <div>
+      <%= require('html-loader!./partials/modules/header.html') %>
+    </div>
+
+
+    <section class="viewport centered">
+      <ul>
+        <li id="projects">
+            <h2>
+                <a href="../../projects.html">Projects</a>
+            </h2>
+        </li>
+
+        <li id="portraits">
+            <h2>
+                <a href="../../portraits.html">Portraits</a>
+            </h2>
+        </li>
+      </ul>
+    </section>
+
+    <! footer insert >
+    <div>
+      <%= require('html-loader!./partials/modules/footer.html') %>
+    </div>
+  </body>
+</html>
