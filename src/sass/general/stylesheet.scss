@@ -5,6 +5,13 @@ h1 {
     font-family: $t-font-reg;
 }
 
+.viewport h1 {
+    font-size: $t-font-size-h1;
+    font-weight: 400;
+    color: $t-colors-black;
+    font-family: $t-font-reg;
+}
+
 h2 {
     font-size: $t-font-size-h2;
     font-weight: 400;
@@ -51,8 +58,9 @@ a {
     } 
 }
 
-/** For links on colored backgrounds **/
+/* For links on colored backgrounds */
 .link-white{
+    text-decoration: none;
     color: $t-colors-white;
 
     &:hover {
@@ -100,26 +108,27 @@ a {
     display: flex;
     height: 100vh;
     width: 100vw;
-
-   
-    /** Image Background Test
-    background-image: url(../images/eliane.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    **/
+    overflow: scroll;
 }
 
-/** Combo-Class to center the content within the viewport**/
+/* Combo-Class to center the content within the viewport */
 .centered {
     align-items: center;
     justify-content: center;
 }
 
-/**Container for standart copy within body**/
+/* Container for standard copy within body */
 .copy-container{
+    padding: $t-units-m;
     padding-top: calc(#{$t-units-l} * 2);
-    padding-left: $t-units-m;
-    padding-right: $t-units-m;
 }
 
+.copy-container p {
+    padding-right: 45vw;
+}
 
+@media only screen and (max-width: 650px) {
+    .copy-container p {
+        padding-right: $t-units-m;
+    }
+  }

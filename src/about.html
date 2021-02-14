@@ -7,21 +7,23 @@
   </head>
 
   <body>
-    <nav>
-      <div>
-        <%= require('html-loader!./partials/modules/timo.html') %>
-      </div>
+    <header>
+      <nav>
+        <div>
+          <%= require('html-loader!./partials/modules/timo.html') %>
+        </div>
 
-      <h1 class="top-right">
-        <span class="on"> About</span>
-      </h1>
-
-    </nav>
+        <h1 class="top-right">
+          <span class="on"> About</span>
+        </h1>
+      </nav>
+    </header>
 
     <section class="viewport">
       <div class="copy-container">
           <p>
-              Timo Matthies (*1997) works and lives in Düsseldorf, Germany. He studies Photography & Design at the Peter Behrens School of Art. <br>
+              Timo Matthies (*1997) works and lives in Düsseldorf, Germany. 
+              He studies Photography & Design at the Peter Behrens School of Arts. <br>
           </p>
           <p>
             <br>
@@ -30,7 +32,7 @@
               For further information, please don't hesitate to reach out.
           </p>
       </div>
-  </section>
+    </section>
 
     <div>
       <%= require('html-loader!./partials/modules/footer.html') %>

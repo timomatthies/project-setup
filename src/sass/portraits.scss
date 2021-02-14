@@ -1,0 +1,46 @@
+.grid{
+    margin-top: calc(#{$t-units-l} * 2);
+    padding-left: $t-units-l;
+    padding-right: $t-units-l;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: $t-units-m;
+    row-gap: $t-units-l;
+    
+}
+
+.portrait-wrapper{
+    align-self: start;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.portrait-container{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#eliane {
+    background-image: url(../images/eliane.jpg);
+}
+
+#prissi {
+    background-image: url(../images/prissi.jpg);
+}
+
+#pauline {
+    background-image: url(../images/pauline.jpg);
+}
+
+@media only screen and (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        padding-left: $t-units-m;
+        padding-right: $t-units-m;
+    }
+  }

@@ -79,7 +79,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: "Foto–Karton",
-      template: "src/projects/fotokarton.html",
+      year: "2017",
+      template: "src/fotokarton.html",
       filename: "fotokarton.html",
     }),
     

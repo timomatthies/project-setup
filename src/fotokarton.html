@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <%= require('html-loader!./partials/modules/timo.html') %>
+        </div>
+        <h1 class="top-right">
+          <a href="./projects.html">Projects</a> 
+        </h1>
+      </nav>
+    </header>
+
+    <!-- Image Slider -->
+    <section class="viewport centered">
+      <div class="image-container"></div>
+
+      <h1 class="bottom-left">
+        <span class="on"><%= htmlWebpackPlugin.options.title %></span>
+      </h1>
+
+      <h1 class="bottom-right">
+        <%= htmlWebpackPlugin.options.year %>
+      </h1>
+    </section>
+
+    <div>
+      <%= require('html-loader!./partials/modules/footer.html') %>
+    </div>    
+  </body>
+</html>

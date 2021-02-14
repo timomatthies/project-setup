@@ -8,3 +8,9 @@
 .title-container p {
     text-align: center;
 }
+
+.title-container h2 {
+    &:hover {
+        color: $t-colors-main;
+    } 
+}
